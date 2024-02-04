@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/react@17.0.0/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@17.0.0/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone@7.12.4/babel.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="react.css">
+    <style >
+        .greeting{
+            color: pink;
+        }
+    </style>
+      <link rel="stylesheet" href="react.css">
+</head>
+<body>
+  <div id="root"></div>
+<script type="text/babel">
+ const Welcome=(props)=>{
+   const  {name,greeting,name1,greeting1}=props 
+    return (
+        <div>
+            <h1>{name} {greeting}</h1>
+            <h1>{name1} {greeting1}</h1></div>
+    )
+ }
+ const Greetin=()=>(
+    <div>
+        <Welcome name="pooja" greeting="welcome"/>
+        <Welcome name1="ganesh" greeting1="welcome"/>
+        
+        </div>
+ )
+ const elemt=ReactDOM.render(
+    <Greetin/>, document.getElementById("root"))
+</script>
+
+</body>
+</html>
